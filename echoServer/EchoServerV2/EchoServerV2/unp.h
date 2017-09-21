@@ -13,8 +13,11 @@
 #include <stdio.h>
 #include <strings.h>
 #include <errno.h>
+#include <netinet/in.h>
 
 
 #define MAXLINE 1024
+
+#define LISTENQ 1024
 
 #endif /* unp_h */
