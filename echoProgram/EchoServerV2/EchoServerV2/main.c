@@ -7,9 +7,9 @@
 //
 
 #include <stdio.h>
-#include "wrapSock.h"
-#include "errorCustom.h"
 #include "unp.h"
+
+void str_echo(int sockfd);
 
 int main(int argc, const char * argv[]) {
     
@@ -33,11 +33,30 @@ int main(int argc, const char * argv[]) {
         clilen = sizeof(cliaddr);
         connfd = Accept(listenfd, (struct sockaddr *)&cliaddr, &clilen);
         
-        if ( childPid = fork ) {
-            <#statements#>
+        //等于0表示子进程
+        if ( ( childPid = Fork() ) == 0 ) {
+            Close( listenfd );
+            str_echo(connfd);
+            exit(0);
         }
+        
+        Close(connfd); /* 父进程应当关闭连接 */
+    }
+    return 0;
+}
+
+void str_echo(int sockfd)
+{
+    ssize_t n;
+    char buf[MAXLINE];
+    
+again:
+    while ( (n = read(sockfd, buf, MAXLINE)) > 0 ) {
+        Writen(sockfd, buf, n);
     }
     
-    return 0;
-    
+    if ( n < 0 && errno == EINTR )
+        goto again;
+    else if (n < 0)
+        err_sys("str_echo: read error");
 }

@@ -14,6 +14,11 @@
 #include <strings.h>
 #include <errno.h>
 #include <netinet/in.h>
+#include <unistd.h>
+#include "errorCustom.h"
+#include "wrapSock.h"
+#include "wrapUnix.h"
+#include "writen.h"
 
 
 #define MAXLINE 1024

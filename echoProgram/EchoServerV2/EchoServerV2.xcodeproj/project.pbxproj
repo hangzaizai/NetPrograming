@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315D2D2B1F74B996000D2E3F /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D291F74B996000D2E3F /* wrapUnix.c */; };
+		315D2D301F74C11F000D2E3F /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D2E1F74C11F000D2E3F /* writen.c */; };
 		66FAC71C1F7145D10066AB9B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 66FAC71B1F7145D10066AB9B /* main.c */; };
 		66FAC7241F7146660066AB9B /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 66FAC7221F7146660066AB9B /* wrapSock.c */; };
 		66FAC7271F714BE00066AB9B /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 66FAC7251F714BE00066AB9B /* errorCustom.c */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		315D2D291F74B996000D2E3F /* wrapUnix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wrapUnix.c; sourceTree = "<group>"; };
+		315D2D2A1F74B996000D2E3F /* wrapUnix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wrapUnix.h; sourceTree = "<group>"; };
+		315D2D2E1F74C11F000D2E3F /* writen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writen.c; sourceTree = "<group>"; };
+		315D2D2F1F74C11F000D2E3F /* writen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writen.h; sourceTree = "<group>"; };
 		66FAC7181F7145D10066AB9B /* EchoServerV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EchoServerV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FAC71B1F7145D10066AB9B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		66FAC7221F7146660066AB9B /* wrapSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wrapSock.c; sourceTree = "<group>"; };
@@ -70,6 +76,10 @@
 				66FAC7261F714BE00066AB9B /* errorCustom.h */,
 				66FAC7251F714BE00066AB9B /* errorCustom.c */,
 				66FAC7281F714DFA0066AB9B /* unp.h */,
+				315D2D2A1F74B996000D2E3F /* wrapUnix.h */,
+				315D2D291F74B996000D2E3F /* wrapUnix.c */,
+				315D2D2F1F74C11F000D2E3F /* writen.h */,
+				315D2D2E1F74C11F000D2E3F /* writen.c */,
 			);
 			path = EchoServerV2;
 			sourceTree = "<group>";
@@ -133,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FAC7271F714BE00066AB9B /* errorCustom.c in Sources */,
+				315D2D301F74C11F000D2E3F /* writen.c in Sources */,
+				315D2D2B1F74B996000D2E3F /* wrapUnix.c in Sources */,
 				66FAC71C1F7145D10066AB9B /* main.c in Sources */,
 				66FAC7241F7146660066AB9B /* wrapSock.c in Sources */,
 			);
@@ -263,6 +275,7 @@
 				66FAC7211F7145D10066AB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
