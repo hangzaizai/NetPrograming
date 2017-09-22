@@ -6,8 +6,29 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		315D2D621F74F6FE000D2E3F /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D5B1F74F6FD000D2E3F /* wrapSock.c */; };
+		315D2D631F74F6FE000D2E3F /* wrapSock.h in Headers */ = {isa = PBXBuildFile; fileRef = 315D2D5C1F74F6FD000D2E3F /* wrapSock.h */; };
+		315D2D641F74F6FE000D2E3F /* wrapUnix.h in Headers */ = {isa = PBXBuildFile; fileRef = 315D2D5D1F74F6FD000D2E3F /* wrapUnix.h */; };
+		315D2D651F74F6FE000D2E3F /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D5E1F74F6FD000D2E3F /* writen.c */; };
+		315D2D661F74F6FE000D2E3F /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D5F1F74F6FD000D2E3F /* wrapUnix.c */; };
+		315D2D671F74F6FE000D2E3F /* writen.h in Headers */ = {isa = PBXBuildFile; fileRef = 315D2D601F74F6FE000D2E3F /* writen.h */; };
+		315D2D681F74F6FE000D2E3F /* unp.h in Headers */ = {isa = PBXBuildFile; fileRef = 315D2D611F74F6FE000D2E3F /* unp.h */; };
+		315D2D6B1F74F7C2000D2E3F /* errorCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 315D2D691F74F7C2000D2E3F /* errorCustom.h */; };
+		315D2D6C1F74F7C2000D2E3F /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D6A1F74F7C2000D2E3F /* errorCustom.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		315D2D531F74F6A6000D2E3F /* libUnixLibary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUnixLibary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		315D2D5B1F74F6FD000D2E3F /* wrapSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wrapSock.c; sourceTree = "<group>"; };
+		315D2D5C1F74F6FD000D2E3F /* wrapSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapSock.h; sourceTree = "<group>"; };
+		315D2D5D1F74F6FD000D2E3F /* wrapUnix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapUnix.h; sourceTree = "<group>"; };
+		315D2D5E1F74F6FD000D2E3F /* writen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writen.c; sourceTree = "<group>"; };
+		315D2D5F1F74F6FD000D2E3F /* wrapUnix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wrapUnix.c; sourceTree = "<group>"; };
+		315D2D601F74F6FE000D2E3F /* writen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writen.h; sourceTree = "<group>"; };
+		315D2D611F74F6FE000D2E3F /* unp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unp.h; sourceTree = "<group>"; };
+		315D2D691F74F7C2000D2E3F /* errorCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errorCustom.h; sourceTree = "<group>"; };
+		315D2D6A1F74F7C2000D2E3F /* errorCustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errorCustom.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +45,7 @@
 		315D2D4A1F74F6A6000D2E3F = {
 			isa = PBXGroup;
 			children = (
+				315D2D5A1F74F6CB000D2E3F /* UnixLibary */,
 				315D2D541F74F6A6000D2E3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,6 +58,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		315D2D5A1F74F6CB000D2E3F /* UnixLibary */ = {
+			isa = PBXGroup;
+			children = (
+				315D2D611F74F6FE000D2E3F /* unp.h */,
+				315D2D6A1F74F7C2000D2E3F /* errorCustom.c */,
+				315D2D691F74F7C2000D2E3F /* errorCustom.h */,
+				315D2D5B1F74F6FD000D2E3F /* wrapSock.c */,
+				315D2D5C1F74F6FD000D2E3F /* wrapSock.h */,
+				315D2D5F1F74F6FD000D2E3F /* wrapUnix.c */,
+				315D2D5D1F74F6FD000D2E3F /* wrapUnix.h */,
+				315D2D5E1F74F6FD000D2E3F /* writen.c */,
+				315D2D601F74F6FE000D2E3F /* writen.h */,
+			);
+			path = UnixLibary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -43,6 +81,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315D2D671F74F6FE000D2E3F /* writen.h in Headers */,
+				315D2D641F74F6FE000D2E3F /* wrapUnix.h in Headers */,
+				315D2D681F74F6FE000D2E3F /* unp.h in Headers */,
+				315D2D631F74F6FE000D2E3F /* wrapSock.h in Headers */,
+				315D2D6B1F74F7C2000D2E3F /* errorCustom.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315D2D651F74F6FE000D2E3F /* writen.c in Sources */,
+				315D2D621F74F6FE000D2E3F /* wrapSock.c in Sources */,
+				315D2D661F74F6FE000D2E3F /* wrapUnix.c in Sources */,
+				315D2D6C1F74F7C2000D2E3F /* errorCustom.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +275,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTD8US8PM8;
 				EXECUTABLE_PREFIX = lib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

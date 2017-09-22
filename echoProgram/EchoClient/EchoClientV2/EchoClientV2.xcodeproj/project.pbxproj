@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		315D2D3E1F74C2DD000D2E3F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D3D1F74C2DD000D2E3F /* main.c */; };
+		315D2D771F750073000D2E3F /* libUnixLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 315D2D741F74FE74000D2E3F /* libUnixLibary.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		315D2D731F74FE74000D2E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 315D2D531F74F6A6000D2E3F;
+			remoteInfo = UnixLibary;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		315D2D381F74C2DD000D2E3F /* CopyFiles */ = {
@@ -25,6 +36,7 @@
 /* Begin PBXFileReference section */
 		315D2D3A1F74C2DD000D2E3F /* EchoClientV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EchoClientV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		315D2D3D1F74C2DD000D2E3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnixLibary.xcodeproj; path = ../../UnixLibary/UnixLibary.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315D2D771F750073000D2E3F /* libUnixLibary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +54,10 @@
 		315D2D311F74C2DD000D2E3F = {
 			isa = PBXGroup;
 			children = (
+				315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */,
 				315D2D3C1F74C2DD000D2E3F /* EchoClientV2 */,
 				315D2D3B1F74C2DD000D2E3F /* Products */,
+				315D2D751F74FF1D000D2E3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +75,21 @@
 				315D2D3D1F74C2DD000D2E3F /* main.c */,
 			);
 			path = EchoClientV2;
+			sourceTree = "<group>";
+		};
+		315D2D701F74FE74000D2E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				315D2D741F74FE74000D2E3F /* libUnixLibary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		315D2D751F74FF1D000D2E3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +137,28 @@
 			mainGroup = 315D2D311F74C2DD000D2E3F;
 			productRefGroup = 315D2D3B1F74C2DD000D2E3F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 315D2D701F74FE74000D2E3F /* Products */;
+					ProjectRef = 315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				315D2D391F74C2DD000D2E3F /* EchoClientV2 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		315D2D741F74FE74000D2E3F /* libUnixLibary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnixLibary.a;
+			remoteRef = 315D2D731F74FE74000D2E3F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		315D2D361F74C2DD000D2E3F /* Sources */ = {
@@ -174,6 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../UnixLibary/UnixLibary/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -223,6 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../UnixLibary/UnixLibary/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -234,6 +282,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTD8US8PM8;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../UnixLibary/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +292,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTD8US8PM8;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../UnixLibary/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
