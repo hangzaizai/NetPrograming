@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66D1AC031F760C24009CA587 /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFA1F760C24009CA587 /* errorCustom.c */; };
+		66D1AC041F760C24009CA587 /* errorCustom.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFB1F760C24009CA587 /* errorCustom.h */; };
+		66D1AC051F760C24009CA587 /* unp.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFC1F760C24009CA587 /* unp.h */; };
+		66D1AC061F760C24009CA587 /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFD1F760C24009CA587 /* wrapSock.c */; };
+		66D1AC071F760C24009CA587 /* wrapSock.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFE1F760C24009CA587 /* wrapSock.h */; };
+		66D1AC081F760C24009CA587 /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFF1F760C24009CA587 /* wrapUnix.c */; };
+		66D1AC091F760C24009CA587 /* wrapUnix.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1AC001F760C24009CA587 /* wrapUnix.h */; };
+		66D1AC0A1F760C24009CA587 /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1AC011F760C24009CA587 /* writen.c */; };
+		66D1AC0B1F760C24009CA587 /* writen.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1AC021F760C24009CA587 /* writen.h */; };
 		66FAC71C1F7145D10066AB9B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 66FAC71B1F7145D10066AB9B /* main.c */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		66D1ABAF1F75F385009CA587 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66D1ABAB1F75F385009CA587 /* UnixLibary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 315D2D531F74F6A6000D2E3F;
-			remoteInfo = UnixLibary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		66FAC7161F7145D10066AB9B /* CopyFiles */ = {
@@ -33,7 +32,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		66D1ABAB1F75F385009CA587 /* UnixLibary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnixLibary.xcodeproj; path = ../UnixLibary/UnixLibary.xcodeproj; sourceTree = "<group>"; };
+		66D1ABDF1F760BB9009CA587 /* errorCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../Public/errorCustom.c; sourceTree = "<group>"; };
+		66D1ABE01F760BB9009CA587 /* errorCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../Public/errorCustom.h; sourceTree = "<group>"; };
+		66D1ABE11F760BB9009CA587 /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../Public/unp.h; sourceTree = "<group>"; };
+		66D1ABE21F760BB9009CA587 /* wrapSock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../Public/wrapSock.c; sourceTree = "<group>"; };
+		66D1ABE31F760BB9009CA587 /* wrapSock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../Public/wrapSock.h; sourceTree = "<group>"; };
+		66D1ABE41F760BB9009CA587 /* wrapUnix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../Public/wrapUnix.c; sourceTree = "<group>"; };
+		66D1ABE51F760BB9009CA587 /* wrapUnix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../Public/wrapUnix.h; sourceTree = "<group>"; };
+		66D1ABE61F760BB9009CA587 /* writen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../Public/writen.c; sourceTree = "<group>"; };
+		66D1ABE71F760BB9009CA587 /* writen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../Public/writen.h; sourceTree = "<group>"; };
+		66D1ABFA1F760C24009CA587 /* errorCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../Public/errorCustom.c; sourceTree = "<group>"; };
+		66D1ABFB1F760C24009CA587 /* errorCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../Public/errorCustom.h; sourceTree = "<group>"; };
+		66D1ABFC1F760C24009CA587 /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../Public/unp.h; sourceTree = "<group>"; };
+		66D1ABFD1F760C24009CA587 /* wrapSock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../Public/wrapSock.c; sourceTree = "<group>"; };
+		66D1ABFE1F760C24009CA587 /* wrapSock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../Public/wrapSock.h; sourceTree = "<group>"; };
+		66D1ABFF1F760C24009CA587 /* wrapUnix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../Public/wrapUnix.c; sourceTree = "<group>"; };
+		66D1AC001F760C24009CA587 /* wrapUnix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../Public/wrapUnix.h; sourceTree = "<group>"; };
+		66D1AC011F760C24009CA587 /* writen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../Public/writen.c; sourceTree = "<group>"; };
+		66D1AC021F760C24009CA587 /* writen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../Public/writen.h; sourceTree = "<group>"; };
 		66FAC7181F7145D10066AB9B /* EchoServerV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EchoServerV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FAC71B1F7145D10066AB9B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,20 +65,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66D1ABAC1F75F385009CA587 /* Products */ = {
+		66D1ABDE1F760BB8009CA587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				66D1ABB01F75F385009CA587 /* libUnixLibary.a */,
+				66D1ABDF1F760BB9009CA587 /* errorCustom.c */,
+				66D1ABE01F760BB9009CA587 /* errorCustom.h */,
+				66D1ABE11F760BB9009CA587 /* unp.h */,
+				66D1ABE21F760BB9009CA587 /* wrapSock.c */,
+				66D1ABE31F760BB9009CA587 /* wrapSock.h */,
+				66D1ABE41F760BB9009CA587 /* wrapUnix.c */,
+				66D1ABE51F760BB9009CA587 /* wrapUnix.h */,
+				66D1ABE61F760BB9009CA587 /* writen.c */,
+				66D1ABE71F760BB9009CA587 /* writen.h */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		66FAC70F1F7145D10066AB9B = {
 			isa = PBXGroup;
 			children = (
-				66D1ABAB1F75F385009CA587 /* UnixLibary.xcodeproj */,
+				66D1ABFA1F760C24009CA587 /* errorCustom.c */,
+				66D1ABFB1F760C24009CA587 /* errorCustom.h */,
+				66D1ABFC1F760C24009CA587 /* unp.h */,
+				66D1ABFD1F760C24009CA587 /* wrapSock.c */,
+				66D1ABFE1F760C24009CA587 /* wrapSock.h */,
+				66D1ABFF1F760C24009CA587 /* wrapUnix.c */,
+				66D1AC001F760C24009CA587 /* wrapUnix.h */,
+				66D1AC011F760C24009CA587 /* writen.c */,
+				66D1AC021F760C24009CA587 /* writen.h */,
 				66FAC71A1F7145D10066AB9B /* EchoServerV2 */,
 				66FAC7191F7145D10066AB9B /* Products */,
+				66D1ABDE1F760BB8009CA587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,12 +161,6 @@
 			mainGroup = 66FAC70F1F7145D10066AB9B;
 			productRefGroup = 66FAC7191F7145D10066AB9B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 66D1ABAC1F75F385009CA587 /* Products */;
-					ProjectRef = 66D1ABAB1F75F385009CA587 /* UnixLibary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				66FAC7171F7145D10066AB9B /* EchoServerV2 */,
@@ -141,21 +168,20 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		66D1ABB01F75F385009CA587 /* libUnixLibary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libUnixLibary.a;
-			remoteRef = 66D1ABAF1F75F385009CA587 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
 		66FAC7141F7145D10066AB9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D1AC031F760C24009CA587 /* errorCustom.c in Sources */,
+				66D1AC041F760C24009CA587 /* errorCustom.h in Sources */,
+				66D1AC051F760C24009CA587 /* unp.h in Sources */,
+				66D1AC061F760C24009CA587 /* wrapSock.c in Sources */,
+				66D1AC071F760C24009CA587 /* wrapSock.h in Sources */,
+				66D1AC081F760C24009CA587 /* wrapUnix.c in Sources */,
+				66D1AC091F760C24009CA587 /* wrapUnix.h in Sources */,
+				66D1AC0A1F760C24009CA587 /* writen.c in Sources */,
+				66D1AC0B1F760C24009CA587 /* writen.h in Sources */,
 				66FAC71C1F7145D10066AB9B /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = HTD8US8PM8;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../UnixLibary/UnixLibary/**",
+					"${PROJECT_DIR}/../Public/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,6 +292,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = HTD8US8PM8;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../UnixLibary/UnixLibary/**",
+					"${PROJECT_DIR}/../Public/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

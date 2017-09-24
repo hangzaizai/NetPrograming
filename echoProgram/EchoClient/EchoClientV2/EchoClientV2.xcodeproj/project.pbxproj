@@ -8,18 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		315D2D3E1F74C2DD000D2E3F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D3D1F74C2DD000D2E3F /* main.c */; };
-		315D2D771F750073000D2E3F /* libUnixLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 315D2D741F74FE74000D2E3F /* libUnixLibary.a */; };
+		66A3DD331F77560C00B70E1C /* wrapStdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 66A3DD311F77560C00B70E1C /* wrapStdio.c */; };
+		66D1ABD41F760B32009CA587 /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCB1F760B32009CA587 /* errorCustom.c */; };
+		66D1ABD51F760B32009CA587 /* errorCustom.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCC1F760B32009CA587 /* errorCustom.h */; };
+		66D1ABD61F760B32009CA587 /* unp.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCD1F760B32009CA587 /* unp.h */; };
+		66D1ABD71F760B32009CA587 /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCE1F760B32009CA587 /* wrapSock.c */; };
+		66D1ABD81F760B32009CA587 /* wrapSock.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCF1F760B32009CA587 /* wrapSock.h */; };
+		66D1ABD91F760B32009CA587 /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD01F760B32009CA587 /* wrapUnix.c */; };
+		66D1ABDA1F760B32009CA587 /* wrapUnix.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD11F760B32009CA587 /* wrapUnix.h */; };
+		66D1ABDB1F760B32009CA587 /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD21F760B32009CA587 /* writen.c */; };
+		66D1ABDC1F760B32009CA587 /* writen.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD31F760B32009CA587 /* writen.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		315D2D731F74FE74000D2E3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 315D2D531F74F6A6000D2E3F;
-			remoteInfo = UnixLibary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		315D2D381F74C2DD000D2E3F /* CopyFiles */ = {
@@ -36,7 +35,17 @@
 /* Begin PBXFileReference section */
 		315D2D3A1F74C2DD000D2E3F /* EchoClientV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EchoClientV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		315D2D3D1F74C2DD000D2E3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnixLibary.xcodeproj; path = ../../UnixLibary/UnixLibary.xcodeproj; sourceTree = "<group>"; };
+		66A3DD311F77560C00B70E1C /* wrapStdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapStdio.c; path = ../../Public/wrapStdio.c; sourceTree = "<group>"; };
+		66A3DD321F77560C00B70E1C /* wrapStdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapStdio.h; path = ../../Public/wrapStdio.h; sourceTree = "<group>"; };
+		66D1ABCB1F760B32009CA587 /* errorCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../../Public/errorCustom.c; sourceTree = "<group>"; };
+		66D1ABCC1F760B32009CA587 /* errorCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../../Public/errorCustom.h; sourceTree = "<group>"; };
+		66D1ABCD1F760B32009CA587 /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../../Public/unp.h; sourceTree = "<group>"; };
+		66D1ABCE1F760B32009CA587 /* wrapSock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../../Public/wrapSock.c; sourceTree = "<group>"; };
+		66D1ABCF1F760B32009CA587 /* wrapSock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../../Public/wrapSock.h; sourceTree = "<group>"; };
+		66D1ABD01F760B32009CA587 /* wrapUnix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../../Public/wrapUnix.c; sourceTree = "<group>"; };
+		66D1ABD11F760B32009CA587 /* wrapUnix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../../Public/wrapUnix.h; sourceTree = "<group>"; };
+		66D1ABD21F760B32009CA587 /* writen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../../Public/writen.c; sourceTree = "<group>"; };
+		66D1ABD31F760B32009CA587 /* writen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../../Public/writen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315D2D771F750073000D2E3F /* libUnixLibary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +62,17 @@
 		315D2D311F74C2DD000D2E3F = {
 			isa = PBXGroup;
 			children = (
-				315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */,
+				66A3DD311F77560C00B70E1C /* wrapStdio.c */,
+				66A3DD321F77560C00B70E1C /* wrapStdio.h */,
+				66D1ABCB1F760B32009CA587 /* errorCustom.c */,
+				66D1ABCC1F760B32009CA587 /* errorCustom.h */,
+				66D1ABCD1F760B32009CA587 /* unp.h */,
+				66D1ABCE1F760B32009CA587 /* wrapSock.c */,
+				66D1ABCF1F760B32009CA587 /* wrapSock.h */,
+				66D1ABD01F760B32009CA587 /* wrapUnix.c */,
+				66D1ABD11F760B32009CA587 /* wrapUnix.h */,
+				66D1ABD21F760B32009CA587 /* writen.c */,
+				66D1ABD31F760B32009CA587 /* writen.h */,
 				315D2D3C1F74C2DD000D2E3F /* EchoClientV2 */,
 				315D2D3B1F74C2DD000D2E3F /* Products */,
 				315D2D751F74FF1D000D2E3F /* Frameworks */,
@@ -75,14 +93,6 @@
 				315D2D3D1F74C2DD000D2E3F /* main.c */,
 			);
 			path = EchoClientV2;
-			sourceTree = "<group>";
-		};
-		315D2D701F74FE74000D2E3F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				315D2D741F74FE74000D2E3F /* libUnixLibary.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		315D2D751F74FF1D000D2E3F /* Frameworks */ = {
@@ -137,12 +147,6 @@
 			mainGroup = 315D2D311F74C2DD000D2E3F;
 			productRefGroup = 315D2D3B1F74C2DD000D2E3F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 315D2D701F74FE74000D2E3F /* Products */;
-					ProjectRef = 315D2D6F1F74FE74000D2E3F /* UnixLibary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				315D2D391F74C2DD000D2E3F /* EchoClientV2 */,
@@ -150,21 +154,21 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		315D2D741F74FE74000D2E3F /* libUnixLibary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libUnixLibary.a;
-			remoteRef = 315D2D731F74FE74000D2E3F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
 		315D2D361F74C2DD000D2E3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D1ABD41F760B32009CA587 /* errorCustom.c in Sources */,
+				66D1ABD51F760B32009CA587 /* errorCustom.h in Sources */,
+				66D1ABD61F760B32009CA587 /* unp.h in Sources */,
+				66D1ABD71F760B32009CA587 /* wrapSock.c in Sources */,
+				66D1ABD81F760B32009CA587 /* wrapSock.h in Sources */,
+				66D1ABD91F760B32009CA587 /* wrapUnix.c in Sources */,
+				66D1ABDA1F760B32009CA587 /* wrapUnix.h in Sources */,
+				66D1ABDB1F760B32009CA587 /* writen.c in Sources */,
+				66D1ABDC1F760B32009CA587 /* writen.h in Sources */,
+				66A3DD331F77560C00B70E1C /* wrapStdio.c in Sources */,
 				315D2D3E1F74C2DD000D2E3F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +225,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../UnixLibary/UnixLibary/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -271,7 +275,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../UnixLibary/UnixLibary/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -282,7 +286,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTD8US8PM8;
-				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../UnixLibary/**";
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../UnixLibary/**",
+					"${PROJECT_DIR}/../../Public",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -292,7 +299,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTD8US8PM8;
-				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../UnixLibary/**";
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../UnixLibary/**",
+					"${PROJECT_DIR}/../../Public",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

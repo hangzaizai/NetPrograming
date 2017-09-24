@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
     for ( ; ; ) {
         clilen = sizeof(cliaddr);
         connfd = Accept(listenfd, (struct sockaddr *)&cliaddr, &clilen);
-        
+      
         //等于0表示子进程
         if ( ( childPid = Fork() ) == 0 ) {
             Close( listenfd );
