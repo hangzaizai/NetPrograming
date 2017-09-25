@@ -21,6 +21,10 @@
 #include "writen.h"
 #include "wrapStdio.h"
 #include <arpa/inet.h>
+#include <sys/signal.h>
+#include <signal.h>
+#include "signalCustom.h"
+
 
 
 #define MAXLINE 1024

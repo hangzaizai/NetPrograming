@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3140D7B41F78B16100C9FA2A /* signalCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 3140D7B21F78B16100C9FA2A /* signalCustom.c */; };
 		66D1AC031F760C24009CA587 /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFA1F760C24009CA587 /* errorCustom.c */; };
 		66D1AC041F760C24009CA587 /* errorCustom.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFB1F760C24009CA587 /* errorCustom.h */; };
 		66D1AC051F760C24009CA587 /* unp.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABFC1F760C24009CA587 /* unp.h */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3140D7B21F78B16100C9FA2A /* signalCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = signalCustom.c; path = ../Public/signalCustom.c; sourceTree = "<group>"; };
+		3140D7B31F78B16100C9FA2A /* signalCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = signalCustom.h; path = ../Public/signalCustom.h; sourceTree = "<group>"; };
 		66D1ABDF1F760BB9009CA587 /* errorCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../Public/errorCustom.c; sourceTree = "<group>"; };
 		66D1ABE01F760BB9009CA587 /* errorCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../Public/errorCustom.h; sourceTree = "<group>"; };
 		66D1ABE11F760BB9009CA587 /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../Public/unp.h; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		66FAC70F1F7145D10066AB9B = {
 			isa = PBXGroup;
 			children = (
+				3140D7B21F78B16100C9FA2A /* signalCustom.c */,
+				3140D7B31F78B16100C9FA2A /* signalCustom.h */,
 				66D1ABFA1F760C24009CA587 /* errorCustom.c */,
 				66D1ABFB1F760C24009CA587 /* errorCustom.h */,
 				66D1ABFC1F760C24009CA587 /* unp.h */,
@@ -180,6 +185,7 @@
 				66D1AC071F760C24009CA587 /* wrapSock.h in Sources */,
 				66D1AC081F760C24009CA587 /* wrapUnix.c in Sources */,
 				66D1AC091F760C24009CA587 /* wrapUnix.h in Sources */,
+				3140D7B41F78B16100C9FA2A /* signalCustom.c in Sources */,
 				66D1AC0A1F760C24009CA587 /* writen.c in Sources */,
 				66D1AC0B1F760C24009CA587 /* writen.h in Sources */,
 				66FAC71C1F7145D10066AB9B /* main.c in Sources */,

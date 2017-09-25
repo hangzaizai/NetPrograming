@@ -11,6 +11,8 @@
 
 void str_echo(int sockfd);
 
+void sig_child(int signo);
+
 int main(int argc, const char * argv[]) {
     
     int listenfd,connfd;
@@ -29,12 +31,15 @@ int main(int argc, const char * argv[]) {
     
     Listen(listenfd,LISTENQ);
     
+    Singal(SIGCHLD, sig_child);
+    
     for ( ; ; ) {
         clilen = sizeof(cliaddr);
         connfd = Accept(listenfd, (struct sockaddr *)&cliaddr, &clilen);
       
         //等于0表示子进程
         if ( ( childPid = Fork() ) == 0 ) {
+            printf("子进程号为:%d",getpid());
             Close( listenfd );
             str_echo(connfd);
             exit(0);
@@ -43,6 +48,23 @@ int main(int argc, const char * argv[]) {
         Close(connfd); /* 父进程应当关闭连接 */
     }
     return 0;
+}
+
+void sig_child(int signo)
+{
+    pid_t pid;
+    int stat;
+    
+    printf("当前进程号为:%d",getpid());
+    
+    printf("signal num = %d",signo);
+    
+    //pid = wait(&stat);
+    //waitpid处理
+    //printf("child %d terminated\n",pid);
+    while ( (pid = waitpid(-1, &stat, WNOHANG)) > 0 ) {
+        printf("child %d terminated\n",pid);
+    }
 }
 
 void str_echo(int sockfd)
