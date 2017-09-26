@@ -24,6 +24,10 @@
 #include <sys/signal.h>
 #include <signal.h>
 #include "signalCustom.h"
+#include <sys/types.h>
+#include <math.h>
+#include <sys/_select.h>
+#include <sys/select.h>
 
 
 

@@ -25,8 +25,10 @@ void Connect(int fd,const struct sockaddr *sa,socklen_t len);
 /* acceot */
 int Accept(int fd,struct sockaddr *sa,socklen_t *salenptr);
 
-/*绑定*/
+/* 绑定 */
 void Bind(int fd,const struct sockaddr *sa,socklen_t len);
 
+/* select 包裹函数，用于IO复用 */
+int Select( int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,struct timeval *timeout );
 
 #endif /* wrapSock_h */
