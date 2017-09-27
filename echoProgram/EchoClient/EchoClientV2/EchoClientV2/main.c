@@ -66,27 +66,70 @@ void str_cli(FILE *fd,int sockfd)
         
     }
 #elif ( ClientType==__Select )
+//    int maxfdp1;
+//    fd_set rset;
+//    ssize_t status;
+//    char sendline[MAXLINE],recvline[MAXLINE];
+//    
+//    FD_ZERO(&rset);
+//    for (; ;) {
+//        FD_SET(fileno(fd),&rset);
+//        FD_SET(sockfd,&rset);
+//        maxfdp1 = (int)( fmax(fileno(fd),sockfd) ) + 1;
+//        Select(maxfdp1, &rset, NULL, NULL, NULL);
+//        
+//        if ( FD_ISSET(sockfd,&rset) ) {
+//            status = read(sockfd, recvline, MAXLINE);
+//            if ( status == 0 ) {
+//                err_quit("str_cli:server terminal");
+//            }
+//            if (  status< 0  ) {
+//                err_sys("read error");
+//            }
+//            
+//            puts(recvline);
+//        }
+//        
+//        if ( FD_ISSET(fileno(fd),&rset) ) {
+//            if ( Fgets(sendline, MAXLINE, fd)==NULL ) {
+//                return;
+//            }
+//            Writen(sockfd, sendline, strlen(sendline));
+//        }
+//        
+//    }
+    
     int maxfdp1;
     fd_set rset;
-    ssize_t status;
     char sendline[MAXLINE],recvline[MAXLINE];
+    ssize_t readlen;
     
+    //将fd_set全部设置为0
     FD_ZERO(&rset);
-    for (; ;) {
+    
+    for (; ; ) {
+        
+        
+        
+        //FD_SET表示我们关心的文件描述符
         FD_SET(fileno(fd),&rset);
         FD_SET(sockfd,&rset);
-        maxfdp1 = (int)( fmax(fileno(fd),sockfd) ) + 1;
+        //将maxfdp1设置为描述符+1是因为文件描述符是从0开始的
+        maxfdp1 = ((int)fmaxf(fileno(fd), sockfd)) + 1;
         Select(maxfdp1, &rset, NULL, NULL, NULL);
         
+        //FD_ISSET如果返回真，表示sockfd有数据了
         if ( FD_ISSET(sockfd,&rset) ) {
-            status = read(sockfd, recvline, MAXLINE);
-            if ( status == 0 ) {
-                err_quit("str_cli:server terminal");
+            readlen = read(sockfd, recvline, MAXLINE);
+            //如果读取到的数据为0表示服务端的子进程被杀死了
+            if ( readlen==0 ) {
+                err_quit("server terminal");
             }
-            if (  status< 0  ) {
+            if ( readlen < 0 ) {
                 err_sys("read error");
             }
             
+            //将输出的文件打印出来
             puts(recvline);
         }
         
@@ -94,9 +137,9 @@ void str_cli(FILE *fd,int sockfd)
             if ( Fgets(sendline, MAXLINE, fd)==NULL ) {
                 return;
             }
-            Writen(sockfd, sendline, strlen(sendline));
+            
+            Writen(sockfd, sendline, MAXLINE);
         }
-        
     }
     
 #endif

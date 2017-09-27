@@ -28,7 +28,9 @@ int Accept(int fd,struct sockaddr *sa,socklen_t *salenptr);
 /* 绑定 */
 void Bind(int fd,const struct sockaddr *sa,socklen_t len);
 
-/* select 包裹函数，用于IO复用 */
+/* select 函数 nfds设置为要观察的描述符的最大值+1 ,如果我们对读、写、异常
+   不关心，则传NULL即可，最后一个参数如果传NULL则表示无限等待
+ */
 int Select( int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,struct timeval *timeout );
 
 #endif /* wrapSock_h */

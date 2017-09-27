@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		315D2D3E1F74C2DD000D2E3F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 315D2D3D1F74C2DD000D2E3F /* main.c */; };
-		66A3DD331F77560C00B70E1C /* wrapStdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 66A3DD311F77560C00B70E1C /* wrapStdio.c */; };
-		66D1ABD41F760B32009CA587 /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCB1F760B32009CA587 /* errorCustom.c */; };
-		66D1ABD51F760B32009CA587 /* errorCustom.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCC1F760B32009CA587 /* errorCustom.h */; };
-		66D1ABD61F760B32009CA587 /* unp.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCD1F760B32009CA587 /* unp.h */; };
-		66D1ABD71F760B32009CA587 /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCE1F760B32009CA587 /* wrapSock.c */; };
-		66D1ABD81F760B32009CA587 /* wrapSock.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABCF1F760B32009CA587 /* wrapSock.h */; };
-		66D1ABD91F760B32009CA587 /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD01F760B32009CA587 /* wrapUnix.c */; };
-		66D1ABDA1F760B32009CA587 /* wrapUnix.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD11F760B32009CA587 /* wrapUnix.h */; };
-		66D1ABDB1F760B32009CA587 /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD21F760B32009CA587 /* writen.c */; };
-		66D1ABDC1F760B32009CA587 /* writen.h in Sources */ = {isa = PBXBuildFile; fileRef = 66D1ABD31F760B32009CA587 /* writen.h */; };
+		318E6E3F1F7BA40400E82D0E /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E321F7BA40400E82D0E /* errorCustom.c */; };
+		318E6E401F7BA40400E82D0E /* signalCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E341F7BA40400E82D0E /* signalCustom.c */; };
+		318E6E411F7BA40400E82D0E /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E371F7BA40400E82D0E /* wrapSock.c */; };
+		318E6E421F7BA40400E82D0E /* wrapStdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E391F7BA40400E82D0E /* wrapStdio.c */; };
+		318E6E431F7BA40400E82D0E /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E3B1F7BA40400E82D0E /* wrapUnix.c */; };
+		318E6E441F7BA40400E82D0E /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 318E6E3D1F7BA40400E82D0E /* writen.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,17 +31,19 @@
 /* Begin PBXFileReference section */
 		315D2D3A1F74C2DD000D2E3F /* EchoClientV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EchoClientV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		315D2D3D1F74C2DD000D2E3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		66A3DD311F77560C00B70E1C /* wrapStdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapStdio.c; path = ../../Public/wrapStdio.c; sourceTree = "<group>"; };
-		66A3DD321F77560C00B70E1C /* wrapStdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapStdio.h; path = ../../Public/wrapStdio.h; sourceTree = "<group>"; };
-		66D1ABCB1F760B32009CA587 /* errorCustom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../../Public/errorCustom.c; sourceTree = "<group>"; };
-		66D1ABCC1F760B32009CA587 /* errorCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../../Public/errorCustom.h; sourceTree = "<group>"; };
-		66D1ABCD1F760B32009CA587 /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../../Public/unp.h; sourceTree = "<group>"; };
-		66D1ABCE1F760B32009CA587 /* wrapSock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../../Public/wrapSock.c; sourceTree = "<group>"; };
-		66D1ABCF1F760B32009CA587 /* wrapSock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../../Public/wrapSock.h; sourceTree = "<group>"; };
-		66D1ABD01F760B32009CA587 /* wrapUnix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../../Public/wrapUnix.c; sourceTree = "<group>"; };
-		66D1ABD11F760B32009CA587 /* wrapUnix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../../Public/wrapUnix.h; sourceTree = "<group>"; };
-		66D1ABD21F760B32009CA587 /* writen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../../Public/writen.c; sourceTree = "<group>"; };
-		66D1ABD31F760B32009CA587 /* writen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../../Public/writen.h; sourceTree = "<group>"; };
+		318E6E321F7BA40400E82D0E /* errorCustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../../../Public/errorCustom.c; sourceTree = "<group>"; };
+		318E6E331F7BA40400E82D0E /* errorCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../../../Public/errorCustom.h; sourceTree = "<group>"; };
+		318E6E341F7BA40400E82D0E /* signalCustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = signalCustom.c; path = ../../../Public/signalCustom.c; sourceTree = "<group>"; };
+		318E6E351F7BA40400E82D0E /* signalCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = signalCustom.h; path = ../../../Public/signalCustom.h; sourceTree = "<group>"; };
+		318E6E361F7BA40400E82D0E /* unp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../../../Public/unp.h; sourceTree = "<group>"; };
+		318E6E371F7BA40400E82D0E /* wrapSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../../../Public/wrapSock.c; sourceTree = "<group>"; };
+		318E6E381F7BA40400E82D0E /* wrapSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../../../Public/wrapSock.h; sourceTree = "<group>"; };
+		318E6E391F7BA40400E82D0E /* wrapStdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapStdio.c; path = ../../../Public/wrapStdio.c; sourceTree = "<group>"; };
+		318E6E3A1F7BA40400E82D0E /* wrapStdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapStdio.h; path = ../../../Public/wrapStdio.h; sourceTree = "<group>"; };
+		318E6E3B1F7BA40400E82D0E /* wrapUnix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../../../Public/wrapUnix.c; sourceTree = "<group>"; };
+		318E6E3C1F7BA40400E82D0E /* wrapUnix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../../../Public/wrapUnix.h; sourceTree = "<group>"; };
+		318E6E3D1F7BA40400E82D0E /* writen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../../../Public/writen.c; sourceTree = "<group>"; };
+		318E6E3E1F7BA40400E82D0E /* writen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../../../Public/writen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,17 +60,19 @@
 		315D2D311F74C2DD000D2E3F = {
 			isa = PBXGroup;
 			children = (
-				66A3DD311F77560C00B70E1C /* wrapStdio.c */,
-				66A3DD321F77560C00B70E1C /* wrapStdio.h */,
-				66D1ABCB1F760B32009CA587 /* errorCustom.c */,
-				66D1ABCC1F760B32009CA587 /* errorCustom.h */,
-				66D1ABCD1F760B32009CA587 /* unp.h */,
-				66D1ABCE1F760B32009CA587 /* wrapSock.c */,
-				66D1ABCF1F760B32009CA587 /* wrapSock.h */,
-				66D1ABD01F760B32009CA587 /* wrapUnix.c */,
-				66D1ABD11F760B32009CA587 /* wrapUnix.h */,
-				66D1ABD21F760B32009CA587 /* writen.c */,
-				66D1ABD31F760B32009CA587 /* writen.h */,
+				318E6E321F7BA40400E82D0E /* errorCustom.c */,
+				318E6E331F7BA40400E82D0E /* errorCustom.h */,
+				318E6E341F7BA40400E82D0E /* signalCustom.c */,
+				318E6E351F7BA40400E82D0E /* signalCustom.h */,
+				318E6E361F7BA40400E82D0E /* unp.h */,
+				318E6E371F7BA40400E82D0E /* wrapSock.c */,
+				318E6E381F7BA40400E82D0E /* wrapSock.h */,
+				318E6E391F7BA40400E82D0E /* wrapStdio.c */,
+				318E6E3A1F7BA40400E82D0E /* wrapStdio.h */,
+				318E6E3B1F7BA40400E82D0E /* wrapUnix.c */,
+				318E6E3C1F7BA40400E82D0E /* wrapUnix.h */,
+				318E6E3D1F7BA40400E82D0E /* writen.c */,
+				318E6E3E1F7BA40400E82D0E /* writen.h */,
 				315D2D3C1F74C2DD000D2E3F /* EchoClientV2 */,
 				315D2D3B1F74C2DD000D2E3F /* Products */,
 				315D2D751F74FF1D000D2E3F /* Frameworks */,
@@ -159,17 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D1ABD41F760B32009CA587 /* errorCustom.c in Sources */,
-				66D1ABD51F760B32009CA587 /* errorCustom.h in Sources */,
-				66D1ABD61F760B32009CA587 /* unp.h in Sources */,
-				66D1ABD71F760B32009CA587 /* wrapSock.c in Sources */,
-				66D1ABD81F760B32009CA587 /* wrapSock.h in Sources */,
-				66D1ABD91F760B32009CA587 /* wrapUnix.c in Sources */,
-				66D1ABDA1F760B32009CA587 /* wrapUnix.h in Sources */,
-				66D1ABDB1F760B32009CA587 /* writen.c in Sources */,
-				66D1ABDC1F760B32009CA587 /* writen.h in Sources */,
-				66A3DD331F77560C00B70E1C /* wrapStdio.c in Sources */,
+				318E6E421F7BA40400E82D0E /* wrapStdio.c in Sources */,
+				318E6E401F7BA40400E82D0E /* signalCustom.c in Sources */,
+				318E6E441F7BA40400E82D0E /* writen.c in Sources */,
+				318E6E411F7BA40400E82D0E /* wrapSock.c in Sources */,
 				315D2D3E1F74C2DD000D2E3F /* main.c in Sources */,
+				318E6E3F1F7BA40400E82D0E /* errorCustom.c in Sources */,
+				318E6E431F7BA40400E82D0E /* wrapUnix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
