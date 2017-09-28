@@ -5,7 +5,9 @@
 //  Created by xtkj20170918 on 28/9/17.
 //  Copyright © 2017年 mySelf. All rights reserved.
 //
-
+/*
+ gethostbyname通过域名查找主机信息，比如ip地址等
+ */
 #import <Foundation/Foundation.h>
 #include "unp.h"
 
