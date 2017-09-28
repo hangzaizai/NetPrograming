@@ -28,11 +28,19 @@
 #include <math.h>
 #include <sys/_select.h>
 #include <sys/select.h>
+#include <netdb.h>
 
 
-
+#ifndef MAXLINE 
 #define MAXLINE 1024
+#endif
 
+#ifndef LISTENQ
 #define LISTENQ 1024
+#endif
+
+#ifndef INET_ADDRSLEN
+#define INET_ADDRSLEN 16
+#endif
 
 #endif /* unp_h */
