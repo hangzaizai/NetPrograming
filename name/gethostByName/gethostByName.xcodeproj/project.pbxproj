@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		316EB4E81F7E385400197491 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4E71F7E385400197491 /* main.c */; };
+		316EB4FB1F7E3C0900197491 /* errorCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4EE1F7E3C0900197491 /* errorCustom.c */; };
+		316EB4FC1F7E3C0900197491 /* signalCustom.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4F01F7E3C0900197491 /* signalCustom.c */; };
+		316EB4FD1F7E3C0900197491 /* wrapSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4F31F7E3C0900197491 /* wrapSock.c */; };
+		316EB4FE1F7E3C0900197491 /* wrapStdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4F51F7E3C0900197491 /* wrapStdio.c */; };
+		316EB4FF1F7E3C0900197491 /* wrapUnix.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4F71F7E3C0900197491 /* wrapUnix.c */; };
+		316EB5001F7E3C0900197491 /* writen.c in Sources */ = {isa = PBXBuildFile; fileRef = 316EB4F91F7E3C0900197491 /* writen.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,19 @@
 /* Begin PBXFileReference section */
 		316EB4E41F7E385400197491 /* gethostByName */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gethostByName; sourceTree = BUILT_PRODUCTS_DIR; };
 		316EB4E71F7E385400197491 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		316EB4EE1F7E3C0900197491 /* errorCustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = errorCustom.c; path = ../../Public/errorCustom.c; sourceTree = "<group>"; };
+		316EB4EF1F7E3C0900197491 /* errorCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = errorCustom.h; path = ../../Public/errorCustom.h; sourceTree = "<group>"; };
+		316EB4F01F7E3C0900197491 /* signalCustom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = signalCustom.c; path = ../../Public/signalCustom.c; sourceTree = "<group>"; };
+		316EB4F11F7E3C0900197491 /* signalCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = signalCustom.h; path = ../../Public/signalCustom.h; sourceTree = "<group>"; };
+		316EB4F21F7E3C0900197491 /* unp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unp.h; path = ../../Public/unp.h; sourceTree = "<group>"; };
+		316EB4F31F7E3C0900197491 /* wrapSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapSock.c; path = ../../Public/wrapSock.c; sourceTree = "<group>"; };
+		316EB4F41F7E3C0900197491 /* wrapSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapSock.h; path = ../../Public/wrapSock.h; sourceTree = "<group>"; };
+		316EB4F51F7E3C0900197491 /* wrapStdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapStdio.c; path = ../../Public/wrapStdio.c; sourceTree = "<group>"; };
+		316EB4F61F7E3C0900197491 /* wrapStdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapStdio.h; path = ../../Public/wrapStdio.h; sourceTree = "<group>"; };
+		316EB4F71F7E3C0900197491 /* wrapUnix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapUnix.c; path = ../../Public/wrapUnix.c; sourceTree = "<group>"; };
+		316EB4F81F7E3C0900197491 /* wrapUnix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrapUnix.h; path = ../../Public/wrapUnix.h; sourceTree = "<group>"; };
+		316EB4F91F7E3C0900197491 /* writen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writen.c; path = ../../Public/writen.c; sourceTree = "<group>"; };
+		316EB4FA1F7E3C0900197491 /* writen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writen.h; path = ../../Public/writen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,19 @@
 		316EB4DB1F7E385400197491 = {
 			isa = PBXGroup;
 			children = (
+				316EB4EE1F7E3C0900197491 /* errorCustom.c */,
+				316EB4EF1F7E3C0900197491 /* errorCustom.h */,
+				316EB4F01F7E3C0900197491 /* signalCustom.c */,
+				316EB4F11F7E3C0900197491 /* signalCustom.h */,
+				316EB4F21F7E3C0900197491 /* unp.h */,
+				316EB4F31F7E3C0900197491 /* wrapSock.c */,
+				316EB4F41F7E3C0900197491 /* wrapSock.h */,
+				316EB4F51F7E3C0900197491 /* wrapStdio.c */,
+				316EB4F61F7E3C0900197491 /* wrapStdio.h */,
+				316EB4F71F7E3C0900197491 /* wrapUnix.c */,
+				316EB4F81F7E3C0900197491 /* wrapUnix.h */,
+				316EB4F91F7E3C0900197491 /* writen.c */,
+				316EB4FA1F7E3C0900197491 /* writen.h */,
 				316EB4E61F7E385400197491 /* gethostByName */,
 				316EB4E51F7E385400197491 /* Products */,
 			);
@@ -120,7 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316EB4FE1F7E3C0900197491 /* wrapStdio.c in Sources */,
+				316EB4FC1F7E3C0900197491 /* signalCustom.c in Sources */,
+				316EB5001F7E3C0900197491 /* writen.c in Sources */,
+				316EB4FD1F7E3C0900197491 /* wrapSock.c in Sources */,
 				316EB4E81F7E385400197491 /* main.c in Sources */,
+				316EB4FB1F7E3C0900197491 /* errorCustom.c in Sources */,
+				316EB4FF1F7E3C0900197491 /* wrapUnix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
