@@ -16,37 +16,35 @@ int main(int argc, char * argv[]) {
     
     char *ptr,**pptr;
     char str[INET_ADDRSTRLEN];
-    struct hostent *hptr;
+    struct hostent *htpr;
     
     while ( --argc ) {
+        //第一次ptr指向命令行参数的第一个命令字符串
+        ptr = *++argv;
         
-        ptr = *(++argv);
-        if ( ( hptr = gethostbyname(ptr) ) == NULL ) {
-            err_msg("gethostbyname error for host:%s : %s",ptr,hstrerror(h_errno));
-            
+        //当没有网络连接的时候应该怎么处理?
+        if ( ( htpr = gethostbyname(ptr) ) == NULL ) {
+            err_msg("gethostbyname error for host:%s:%s",ptr,hstrerror(h_errno));
             continue;
         }
-        printf("official hostname:%s\n",hptr->h_name);
+        //将主机名字打印出来
+        printf("offical hostname:%s\n",htpr->h_name);
         
-        for ( pptr = hptr->h_aliases ; *pptr!=NULL ; pptr++ ) {
-            printf("\talias:%s\n",*pptr);
+        //遍历主机别名
+        for ( pptr = htpr->h_addr_list ; *pptr!=NULL ; pptr++ ) {
+            printf("\t alias:%s",*pptr);
         }
         
-        switch ( hptr->h_addrtype ) {
-                case AF_INET:
-                    pptr = hptr->h_addr_list;
-                    for ( ; *pptr!=NULL; pptr++ ) {
-                        printf("\taaddress:%s\n",inet_ntop(hptr->h_addrtype, *pptr, str, sizeof(str)));
-                    }
-                    break;
-                    
-                default:
-                    printf("unknown address type");
-                    break;
-            }
-
+        //根据地址类型打印地址
+        switch ( htpr->h_addrtype ) {
+            case AF_INET:
+                //遍历地址列表
+                pptr = htpr->h_addr_list;
+                for (; *pptr != NULL ; pptr++ ) {
+                    printf("\t address:%s\n",inet_ntop(htpr->h_addrtype, *pptr,str , sizeof(str)));
+                }
+        }
         
     }
-    
     return 0;
 }

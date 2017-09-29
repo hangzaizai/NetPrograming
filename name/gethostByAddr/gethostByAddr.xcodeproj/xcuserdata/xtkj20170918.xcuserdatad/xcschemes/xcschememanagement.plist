@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>getHostByName.xcscheme</key>
+		<key>gethostByAddr.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>311FE0A11F7CB3AF00F58B95</key>
+		<key>316EB4D01F7E20F000197491</key>
 		<dict>
 			<key>primary</key>
 			<true/>
