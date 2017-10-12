@@ -16,7 +16,8 @@
 
 //设置当前类型
 #ifndef ClientType
-#define ClientType __Select
+#define ClientType __Normal
+
 #endif
 
 void str_cli(FILE *fd,int sockfd);
@@ -56,14 +57,11 @@ void str_cli(FILE *fd,int sockfd)
     ssize_t status;
     while ( Fgets(sendline, MAXLINE, fd)!=NULL  ) {
         Writen(sockfd, sendline, strlen(sendline));
-        
-        
         status = read(sockfd, recvline, MAXLINE);
         if (  status< 0  ) {
             err_sys("read error");
         }
         puts(recvline);
-        
     }
 #elif ( ClientType==__Select )
 //    int maxfdp1;
@@ -108,9 +106,6 @@ void str_cli(FILE *fd,int sockfd)
     FD_ZERO(&rset);
     
     for (; ; ) {
-        
-        
-        
         //FD_SET表示我们关心的文件描述符
         FD_SET(fileno(fd),&rset);
         FD_SET(sockfd,&rset);
@@ -137,7 +132,7 @@ void str_cli(FILE *fd,int sockfd)
             if ( Fgets(sendline, MAXLINE, fd)==NULL ) {
                 return;
             }
-            
+
             Writen(sockfd, sendline, MAXLINE);
         }
     }
