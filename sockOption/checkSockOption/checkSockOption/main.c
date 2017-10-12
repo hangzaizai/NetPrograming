@@ -129,7 +129,7 @@ int main(int argc, const char * argv[]) {
             if ( getsockopt(fd, ptr->opt_level, ptr->opt_name, &val, &len)==-1 ) {
                 err_sys("getsocketopt error");
             }else{
-                //printf("default = ");
+                //printf("default = %s\n",());
             }
             
         }
@@ -138,4 +138,15 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
+static char strres[128];
+static char *sock_str_flag( union val *ptr,int len)
+{
+    if ( len!= sizeof(int) ) {
+        snprintf(strres, sizeof(strres), "size (%d) not sizeof(int)", len);
+    }else{
+        snprintf(strres, sizeof(strres),
+                 "%s", (ptr->i_val == 0) ? "off" : "on");
+    }
+    return(strres);
+}
 
