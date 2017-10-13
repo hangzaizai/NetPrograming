@@ -7,8 +7,18 @@
 //
 
 #include <stdio.h>
+#include "unp.h"
+
+int listenfd,connfd;
+
+void sig_urg(int);
 
 int main(int argc, const char * argv[]) {
+    
+    int n;
+    char buff[100];
+    
+    
     
     return 0;
 }
