@@ -72,3 +72,10 @@ int Select( int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,struct t
     
     return (n);
 }
+
+void Send( int fd,const void *ptr,size_t nbytes,int flags)
+{
+    if ( send( fd, ptr, nbytes, flags) != (ssize_t)nbytes ) {
+        err_sys("send error");
+    }
+}

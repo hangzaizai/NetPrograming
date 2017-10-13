@@ -20,6 +20,7 @@
 #include "wrapUnix.h"
 #include "writen.h"
 #include "wrapStdio.h"
+#include "tcp_connect.h"
 #include <arpa/inet.h>
 #include <sys/signal.h>
 #include <signal.h>

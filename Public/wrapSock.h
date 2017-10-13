@@ -33,4 +33,11 @@ void Bind(int fd,const struct sockaddr *sa,socklen_t len);
  */
 int Select( int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,struct timeval *timeout );
 
+
+/**
+  send函数
+ */
+void Send( int fd,const void *ptr,size_t nbytes,int flags);
+
+
 #endif /* wrapSock_h */
