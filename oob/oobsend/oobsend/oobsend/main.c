@@ -7,9 +7,32 @@
 //
 
 #include <stdio.h>
+#include "unp.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    int sockfd;
+    char *hostaddr;
+    char *serverport;//端口
+    
+    hostaddr = "127.0.0.1";
+    serverport = "1234";
+    
+    sockfd = tcp_connect(hostaddr,serverport);
+    
+
+    write(sockfd, "123", 3);
+    printf("write 3 bytes of normal data\n");
+    sleep(1);
+    
+    //发送带外数据
+    Send(sockfd, "4", 1, MSG_OOB);
+    printf("write 1 byte of OOB data\n");
+    sleep(1);
+    
+    write(sockfd, "56", 2);
+    printf("write 2 byte of normal data\n");
+    sleep(1);
+    
     return 0;
 }
