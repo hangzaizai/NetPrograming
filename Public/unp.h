@@ -21,6 +21,7 @@
 #include "writen.h"
 #include "wrapStdio.h"
 #include "tcp_connect.h"
+#include "tcp_listen.h"
 #include <arpa/inet.h>
 #include <sys/signal.h>
 #include <signal.h>

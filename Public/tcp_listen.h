@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+
+int tcp_listen(const char *host,const char*serv,socklen_t *addrlenp);
+
+int Tcp_listen(const char *host,const char*serv,socklen_t *addrlenp);
+
 #endif /* tcp_listen_h */

@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
     int n;
     char buff[100];
     
+    listenfd = tcp_listen(NULL, "9999", NULL);
+    
     
     
     return 0;
