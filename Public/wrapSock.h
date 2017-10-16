@@ -39,5 +39,9 @@ int Select( int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,struct t
  */
 void Send( int fd,const void *ptr,size_t nbytes,int flags);
 
+/*
+ recv函数
+ */
+ssize_t Recv( int fd,void *ptr,size_t nbytes,int flags);
 
 #endif /* wrapSock_h */

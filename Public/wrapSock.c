@@ -79,3 +79,14 @@ void Send( int fd,const void *ptr,size_t nbytes,int flags)
         err_sys("send error");
     }
 }
+
+ssize_t Recv( int fd,void *ptr,size_t nbytes,int flags)
+{
+    ssize_t n;
+    
+    if ( (n = recv(fd, ptr, nbytes, flags)) < 0 ) {
+        err_sys("rect error");
+    }
+    
+    return (n);
+}

@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     char *serverport;//端口
     
     hostaddr = "127.0.0.1";
-    serverport = "1234";
+    serverport = "9999";
     
     sockfd = tcp_connect(hostaddr,serverport);
     

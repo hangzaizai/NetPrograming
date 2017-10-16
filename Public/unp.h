@@ -31,6 +31,7 @@
 #include <sys/_select.h>
 #include <sys/select.h>
 #include <netdb.h>
+#include <sys/fcntl.h>
 
 
 #ifndef MAXLINE 

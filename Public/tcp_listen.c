@@ -33,6 +33,8 @@ int tcp_listen(const char *host,const char*serv,socklen_t *addrlenp)
         }
         
         if ( bind(listenfd, res->ai_addr, sizeof(struct sockaddr)) ==0 ) {
+            
+            printf("bind 完成");
             break;
         }
         

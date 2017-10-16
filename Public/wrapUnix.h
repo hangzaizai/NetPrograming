@@ -18,4 +18,6 @@ pid_t Fork();
 
 void Close( int fd );
 
+int Fcntl( int fd , int cmd , int arg);
+
 #endif /* wrapUnix_h */
